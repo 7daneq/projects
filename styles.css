@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	color: #333;
+	font: 18px 'Open Sans', Arial, sans-serif;
+	width: 100vw;
+	height: 100vh;
+}
+
+.container{
+margin-left: auto;
+margin-right: auto;
+max-width: 900px;
+padding-left: 15px;
+padding-right: 15px;
+
+}
+
+.header {
+	min-height: calc(100vh - 70px);
+	padding-top: 250px;
+	padding-bottom: 250px;
+	background: url('mechanik.jpg') center/cover no-repeat;
+	animation: change 10s infinite linear;
+	color: #fff;
+	text-shadow: 0 0 15px rgba(0, 0, 0, .9);
+	text-align: center;
+	
+}
+
+.header h1 {
+	font-size: 100px;
+	
+
+}
+.nav {
+	line-height: 70px;
+	
+	background: linear-Gradient(to right top, #1F315C,#819AD5);
+	position: sticky;
+}
+.nav ul {
+display: flex;
+justify-content: space-between;
+list-style: none;
+}
+
+.nav li {
+	width: 100%;
+}
+ .nav a {
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+ }
+
+ .nav a:hover, nav a:focus {
+	background:#1F315C;
+ }
+
+ .section {
+	padding: 50px ;
+	text-align: justify;
+ }
+
+ .section h2 {
+	
+	text-align: center;
+	text-size-adjust: 30px;
+ }
+
+ .section:nth-of-type(even) {
+	color: #fff;
+	background: linear-Gradient(to right top, #1F315C,#819AD5);
+	text-shadow: 0 0 15px rgba(0, 0, 0, .9);
+}
+
+.section *:not(:first-child) {
+	margin-top: 30px;
+}
+ 
+.warsztat {
+	background: #1F315C;
+}
+
+ .footer{
+	padding: 30px;
+ }
+
+ @keyframes change {
+    0%
+    {
+        background-image: url(mechanik3.webp);
+    }
+   
+    40%
+    {
+        background-image: url(mechanik2.webp);
+    }
+  
+    100%
+    {
+        background-image: url(2022-08-23.jpg);
+    }
+}
